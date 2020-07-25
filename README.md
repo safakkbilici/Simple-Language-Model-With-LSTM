@@ -19,7 +19,7 @@ python train.py --help
 python generate.py --help
 ```
 
-### Model
+## Model
 
 The summary of the model is:
 
