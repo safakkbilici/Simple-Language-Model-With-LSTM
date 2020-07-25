@@ -15,6 +15,7 @@ python generate.py -d [datapath] -t [new file name] -n [number of generated word
 ### For More Detailed Argument Explanation 
 
 ```console
+python train.py --help
 python generate.py --help
 ```
 
