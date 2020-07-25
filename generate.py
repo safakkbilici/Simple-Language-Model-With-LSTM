@@ -24,7 +24,9 @@ index_of_words = corpus.tokenize(args.datapath,BATCH_SIZE)
 VOCAB_SIZE = len(corpus.dictionary)
 model = models.Author(VOCAB_SIZE, EMBED_SIZE, HIDDEN_SIZE, NUM_LAYERS, BATCH_SIZE)
 model.load_state_dict(torch.load("./checkpoints/model.pth"))
-"""
+""" 
+MODEL SUMMARY AND NUMBER OF TRAINABLE PARAMETERS
+-------------------------------------------------
 print(model)
 model_parameters = filter(lambda p: p.requires_grad, model.parameters())
 params = sum([np.prod(p.size()) for p in model_parameters])
