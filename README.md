@@ -28,5 +28,6 @@ The summary of the model is:
       (lstm): LSTM(128, 1024, batch_first=True)
       (linear): Linear(in_features=1024, out_features=33443, bias=True)
     )
-
+    --------------------------------------------------------------------
+    Total number of trainable parameters: 43286563
 
