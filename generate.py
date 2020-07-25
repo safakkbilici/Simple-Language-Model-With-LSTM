@@ -24,6 +24,12 @@ index_of_words = corpus.tokenize(args.datapath,BATCH_SIZE)
 VOCAB_SIZE = len(corpus.dictionary)
 model = models.Author(VOCAB_SIZE, EMBED_SIZE, HIDDEN_SIZE, NUM_LAYERS, BATCH_SIZE)
 model.load_state_dict(torch.load("./checkpoints/model.pth"))
+"""
+print(model)
+model_parameters = filter(lambda p: p.requires_grad, model.parameters())
+params = sum([np.prod(p.size()) for p in model_parameters])
+print(params)
+"""
 with torch.no_grad():
         with open(args.textname, 'w') as f:
             states = (torch.zeros(NUM_LAYERS,1, HIDDEN_SIZE), 
