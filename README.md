@@ -1,19 +1,20 @@
-# Text-Generation-With-LSTM
-train:
+# Text Generation With LSTM
+## Usage
+### Train
 
-```bash
+```console
 python train.py -d [datapath] -e [number of epochs]
 ```
 
-generate:
+### Generate
 
-```bash
+```console
 python generate.py -d [datapath] -t [new file name] -n [number of generated words]
 ```
 
-for more detailed explanation 
+### For More Detailed Argument Explanation 
 
-```bash
+```console
 python generate.py --help
 ```
 
