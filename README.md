@@ -19,6 +19,16 @@ python train.py --help
 python generate.py --help
 ```
 
+## Example
+
+```console
+python train.py -d ./data/bible.txt -e 40
+```
+
+```console
+python generate.py -d ./data/bible.txt -t ./generated/biblev2.txt -n 500
+```
+
 ## Model
 
 The summary of the model is:
