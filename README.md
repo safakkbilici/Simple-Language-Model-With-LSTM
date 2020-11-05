@@ -1,4 +1,4 @@
-# Text Generation With LSTM
+# Simple Language Model With LSTM
 ## Usage
 ### Train
 
